@@ -48,4 +48,8 @@ def Queen_placing(n):
     return Solutions  # Return all valid solutions
 
 # Print the solutions for a 4x4 board
-print(Queen_placing(4))
+result = Queen_placing(8)      # suppose this returns a list of solutions
+for index, value in enumerate(result):
+    print(f"Solution #{index}")
+    for values in value:
+        print(values) 

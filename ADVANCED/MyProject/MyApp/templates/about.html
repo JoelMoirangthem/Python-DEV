@@ -1,0 +1,92 @@
+{% extends "main.html" %}
+
+{% block content %}
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to right, #667eea, #764ba2);
+    }
+
+    .about-section {
+        padding: 80px 20px;
+        color: white;
+        text-align: center;
+        animation: fadeIn 1.2s ease;
+    }
+
+    .about-container {
+        max-width: 900px;
+        margin: auto;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(12px);
+        animation: slideIn 1.5s ease;
+    }
+
+    .about-container h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .about-container p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #f0f0f0;
+    }
+
+    .highlight {
+        font-weight: bold;
+        color: #00ffe1;
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateY(50px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+</style>
+
+<div class="about-section">
+    <div class="about-container">
+        <h1>About Us</h1>
+        <p>
+            Welcome to <span class="highlight">VisionVerse</span>, where innovation meets purpose. We're a dynamic team of
+            developers, designers, and thinkers passionate about building digital solutions that make a difference.
+        </p>
+        <p>
+            Our mission is simple: <span class="highlight">Empower through technology</span>. Whether it's crafting interactive
+            web applications, designing intuitive user experiences, or delivering meaningful data-driven insights, we're
+            committed to excellence and creativity.
+        </p>
+        <p>
+            At VisionVerse, we believe in the power of collaboration, continuous learning, and pushing the boundaries of what's
+            possible. From ideation to execution, every step we take is aimed at creating a <span class="highlight">positive
+            impact</span>.
+        </p>
+        <p>
+            Thank you for being a part of our journey. Let's build something extraordinary, together.
+        </p>
+    </div>
+</div>
+{% endblock content %}
